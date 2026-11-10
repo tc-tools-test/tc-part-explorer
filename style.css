@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  font: 13px/1.4 "Segoe UI", "Meiryo", sans-serif;
+  color: #252a2e;
+  background: #fff;
+}
+
+header { display: flex; align-items: center; gap: 8px; }
+
+button {
+  padding: 4px 10px;
+  border: 1px solid #0063a3;
+  border-radius: 3px;
+  background: #0063a3;
+  color: #fff;
+  cursor: pointer;
+}
+button:disabled { opacity: .5; cursor: default; }
+
+#searchBox {
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid #c4c6c8;
+  border-radius: 3px;
+}
+
+.table-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #e0e1e2;
+}
+
+table { width: 100%; border-collapse: collapse; }
+
+th {
+  position: sticky;
+  top: 0;
+  background: #f3f3f7;
+  text-align: left;
+  font-weight: 600;
+}
+
+th, td {
+  padding: 4px 6px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: #eef6fc; }
+tbody tr.selected { background: #cfe6f7; }
+
+.muted { color: #6a6e79; }
+.ok { color: #1e8a44; }
+.err { color: #c81922; }

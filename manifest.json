@@ -1,0 +1,7 @@
+{
+  "title": "Part Explorer",
+  "icon": "https://tc-tools-test.github.io/tc-part-explorer/icon.png",
+  "url": "https://tc-tools-test.github.io/tc-part-explorer/index.html",
+  "infoUrl": "https://github.com/tc-tools-test/tc-part-explorer#readme",
+  "description": "Search parts by Name / Profile / Material and zoom to them."
+}
